@@ -8,6 +8,13 @@
     padding-left: 8%;
 }
 
+#container-itens a {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .item-catalogo {
     position: relative;
     border-radius: 5%;
