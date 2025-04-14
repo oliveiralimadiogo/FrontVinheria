@@ -1,20 +1,20 @@
 {
     "vinhos" : [
         {
-            "nome": "",
+            "nome": "Seña",
             "imagem": "",
-            "preco": 0.00,
-            "desconto": 0,
-            "descricao": "",
+            "preco": 1490.00,
+            "desconto": 10,
+            "descricao": "Assinado por Eduardo Chadwick, Seña foi o primeiro projeto premium do país. Blend bordalês com 22 meses em carvalho revela bom corpo, com destaque para frutas maduras, notas de tabaco e toques mentolados.",
             "temperaturaArmazenamentoCelsius": 22,
-            "anoSafra": 2000,
-            "tipo": "",
-            "uva": "",
-            "produtor": "",
-            "regiao": "",
-            "pais": "",
+            "anoSafra": 2017,
+            "tipo": "Tinto",
+            "uva": "Cabernet Sauvignon",
+            "produtor": "Viña Seña",
+            "regiao": "Valle del Aconcagua",
+            "pais": "Chile",
             "quantidadeAlcool": 13.5,
-            "sabor": "",
+            "sabor": "Seco e encorpado",
             "quantidadeMl": 750
         }
     ]
