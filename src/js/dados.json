@@ -1,5 +1,21 @@
-Colocar dados dos vinhos ex:
-
 {
-    'Vinhos' : []
+    "vinhos" : [
+        {
+            "nome": "",
+            "imagem": "",
+            "preco": 0.00,
+            "desconto": 0,
+            "descricao": "",
+            "temperaturaArmazenamentoCelsius": 22,
+            "anoSafra": 2000,
+            "tipo": "",
+            "uva": "",
+            "produtor": "",
+            "regiao": "",
+            "pais": "",
+            "quantidadeAlcool": 13.5,
+            "sabor": "",
+            "quantidadeMl": 750
+        }
+    ]
 }
