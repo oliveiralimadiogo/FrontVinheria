@@ -1,0 +1,58 @@
+#catalogo{
+    margin: 4% 8% 4% 8%;
+}
+
+#container-itens{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+}
+
+#container-itens a {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.item-catalogo {
+    position: relative;
+    border-radius: 5%;
+    width: 250px;
+    padding: 2%;
+    margin: 2% 2% 2% 0%;
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-catalogo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tag-desconto {
+    background-color:var(--secondaryColor);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}   
+
+
+.nome-produto{
+    width: 80%;
+    text-align: center;
+}
+
+.preco-antigo{
+    text-decoration: line-through;
+}
