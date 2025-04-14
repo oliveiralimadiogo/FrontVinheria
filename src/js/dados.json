@@ -1,5 +1,19 @@
-Colocar dados dos vinhos ex:
-
-{
-    'Vinhos' : []
-}
+[
+    {
+      "id": 1, 
+      "nome": "Vinho Tinto Château de Sales",
+      "ano": 2024,
+      "precoAntigo": 300.00,
+      "preco": 240.00,
+      "imagem": "../assets/imgs/vinho-teste.png",
+      "desconto": "20% Off"
+    },
+    {
+      "id": 2 , 
+      "nome": "Vinho Branco Delicato",
+      "ano": 2023,
+      "preco": 180.00,
+      "imagem": "../assets/imgs/vinho-teste.png"
+    }
+]
+  
