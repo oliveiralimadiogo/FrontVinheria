@@ -7,6 +7,7 @@
     <meta name="description" content="Vinheria do Sr. Giulio">
     <meta name="author" content="Diogo Oliveira Lima, ">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/curiosidades.css">
     <title>Vinheria Agnello</title>
 </head>
 <body>
@@ -21,5 +22,54 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <h2>Curiosidades</h2>
+        <section class="catalog-section">
+          <div class="card">
+            <img src="../assets/imgs/wines.jpg" alt="Vinho Tinto">
+            <div class="card-content">
+              <h4>Mundo dos Vinhos</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum!</p>
+              <a href="#" class="button" onclick="openModal(
+                'Vinho Tinto Clássico',
+                'Este vinho tinto é feito com uvas Cabernet Sauvignon colhidas à mão. Envelhecido por 12 meses em barricas de carvalho francês, possui notas de frutas vermelhas maduras, especiarias e taninos suaves. Ideal para acompanhar carnes vermelhas e massas ao molho.' 
+              )">Ver Detalhes</a>
+            </div>
+          </div>
+    
+          <div class="card">
+            <img src="../assets/imgs/wines.jpg" alt="Vinho Branco">
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo.</p>
+              <a href="#" class="button" onclick="openModal(
+                'Vinho Branco Seco',
+                'Este vinho branco é produzido com uvas Chardonnay cultivadas em regiões de clima fresco. Possui aroma floral, notas cítricas e um final mineral. Perfeito para acompanhar peixes, frutos do mar e saladas leves.'
+              )">Ver Detalhes</a>
+            </div>
+          </div>
+    
+          <div class="card">
+            <img src="../assets/imgs/wines.jpg" alt="Espumante">
+            <div class="card-content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, minima!</p>
+              <a href="#" class="button" onclick="openModal(
+                'Espumante Premium',
+                'Elaborado pelo método tradicional, com segunda fermentação na garrafa. Apresenta borbulhas finas, aroma frutado e toque cítrico. Ideal para brindar momentos especiais e acompanhar canapés ou sobremesas leves.'
+              )">Ver Detalhes</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h3 id="modal-title">Título do Vinho</h3>
+          <p id="modal-description">Descrição completa do vinho selecionado.</p>
+        </div>
+      </div>
+    
+      <script src="../js/curiosidades.js"></script>
 </body>
 </html>
