@@ -6,7 +6,7 @@
     gap: 30px;
 }
 
-.vinheriaApresentacao, .nossoDiferencial {
+.vinheriaApresentacao, .nossosEspecialistas {
     background-color: var(--textColorLight);
     color: #201E1F;
     padding: 30px;
@@ -17,7 +17,7 @@
 }
 
 .vinheriaApresentacao h1,
-.nossoDiferencial h1 {
+.nossosEspecialistas h1 {
     color: var(--secondaryColor);
     padding-bottom: 15px;
     text-align: center;
