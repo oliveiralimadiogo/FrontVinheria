@@ -4,6 +4,7 @@
 
 #catalogo h1 {
     font-size: 32px;
+    color: var(--primaryColor);
 }
 
 #container-itens {
@@ -70,9 +71,5 @@
     width: 100%;
     height: 250px;
     border-radius: 10px;
-}
-
-main {
-    background-color: var(--backgroudColor);
 }
 
