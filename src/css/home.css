@@ -1,0 +1,55 @@
+
+.homeConteudo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vinheriaApresentacao{
+    color:var(--textColorDark);
+    padding: 3.5rem;
+    text-align: justify;
+}
+
+.nossoDiferencial{
+    color: var(--textColorDark);
+    padding: 3.5rem;
+    text-align: justify;
+}
+
+.vinheriaApresentacao h1{
+    color: #993955;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.nossoDiferencial h1{
+    color: #993955;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#videoVinhos{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.diferencial h1{
+    color: #993955;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.diferencialConteudo{
+    color: #FFF;
+    padding: 5rem;
+    text-align: justify;
+}
+
+.textoDiferencial{
+    padding: 1rem;
+}
+
+hr{
+    background-color: #74776B;
+}
