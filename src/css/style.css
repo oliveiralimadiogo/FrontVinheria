@@ -1,5 +1,10 @@
 :root {
-    --primaryColor: #000;
+    --primaryColor: #5D1328;
+    --secondaryColor: #993955;
+    --textColorDark: #201E1F;
+    --textColorLight: #FFF;
+    --jokerColor:  #74776B;
+    --backgroudColor: #EBEBD3;
 }
 
 * {
@@ -7,4 +12,9 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+
+body {
+    background-color: var(--backgroudColor);
+    color: var(--textColorDark);
 }
