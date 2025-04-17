@@ -1,5 +1,5 @@
 function getVinhos(){
-    return fetch('../js/dados.json')
+    return fetch('../assets/dados.json')
     .then(res => res.json())
     .catch(error => {
       console.error('Erro ao carregar os vinhos:', error);
@@ -31,12 +31,13 @@ function montaHtml() {
       if (vinho.desconto) {
         const tag = document.createElement('div');
         tag.className = 'tag-desconto';
-        tag.textContent = vinho.desconto;
+        tag.textContent = `${vinho.desconto}% Off`;
         item.appendChild(tag);
 
         const precoAntigo = document.createElement('p');
         precoAntigo.className = 'preco-antigo';
-        precoAntigo.textContent = `R$ ${vinho.precoAntigo.toFixed(2)}`;
+        let precoComDesconto = vinho.preco - (vinho.preco * vinho.desconto);
+        precoAntigo.textContent = `R$ ${precoComDesconto.toFixed(2)}`; //TODO - Fix this
         precoContainer.appendChild(precoAntigo);
       }
 
@@ -51,7 +52,7 @@ function montaHtml() {
 
       const ano = document.createElement('p');
       ano.className = 'ano-produto';
-      ano.textContent = vinho.ano;
+      ano.textContent = vinho.anoSafra;
       item.appendChild(ano);
 
       const preco = document.createElement('p');
@@ -62,7 +63,7 @@ function montaHtml() {
       item.appendChild(precoContainer);
 
       const link = document.createElement('a');
-      link.href = `pdp.html?id=${vinho.id}`;
+      link.href = `produto.html?id=${vinho.id}`;
       link.style.textDecoration = 'none';
       link.style.color = 'inherit';
       link.appendChild(item);
