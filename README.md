@@ -17,7 +17,7 @@ O projeto é dividido em 6 páginas, acessíveis através de um menu fixo no top
 - **Sobre nós (sobreNos.html)** – Página dedicada à história e valores da vinheria.
 - **Curiosidades (curiosidades.html)** – Apresenta curiosidades sobre vinhos, com destaque para informações históricas e técnicas.
 - **Diferenciais (diferenciais.html)** – Mostra os principais diferenciais da Vinheria Agnello em relação aos concorrentes.
-- **Detalhe do produto (pdp.html)** – Página de produto individual que detalha informações sobre os produtos.
+- **Detalhe do produto (produto.html)** – Página de produto individual que detalha informações sobre os produtos.
 
 ## Desenvolvedores da página :busts_in_silhouette:
 
