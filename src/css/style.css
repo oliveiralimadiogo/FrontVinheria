@@ -21,7 +21,17 @@ body {
     color: var(--textColorDark);
 }
 
-nav{
+header {
+    width: 100vw;
+    z-index: 100000;
+    position: fixed;
+}
+
+main {
+    margin-top: 5%;
+}
+
+nav {
     background-color: var(--primaryColor);
     padding: 0.5%;
     display: flex;
@@ -65,4 +75,69 @@ h1, h2, h3, h4, h5, h6{
 
 body{
     background-color: var(--backgroudColor);
+}
+
+
+footer {
+    background-color: #5D1328;
+    color: var(--textColorLight);
+    padding: 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer .contatos,
+footer .formulario {
+    flex: 1;
+    min-width: 300px;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--textColorLight);
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: var(--textColorLight);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #74776B;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer input,
+footer textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer button {
+    background-color: var(--secondaryColor);
+    color: var(--textColorLight);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
 }
