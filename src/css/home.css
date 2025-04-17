@@ -1,55 +1,109 @@
-
-.homeConteudo{
+.homeConteudo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
 }
 
-.vinheriaApresentacao{
-    color:var(--textColorDark);
-    padding: 3.5rem;
-    text-align: justify;
+.vinheriaApresentacao, .nossosEspecialistas {
+    background-color: var(--textColorLight);
+    color: #201E1F;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
 }
 
-.nossoDiferencial{
-    color: var(--textColorDark);
-    padding: 3.5rem;
-    text-align: justify;
-}
-
-.vinheriaApresentacao h1{
-    color: #993955;
-    padding: 1.5rem;
+.vinheriaApresentacao h1,
+.nossosEspecialistas h1 {
+    color: var(--secondaryColor);
+    padding-bottom: 15px;
     text-align: center;
+    font-size: 24px;
 }
 
-.nossoDiferencial h1{
-    color: #993955;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-#videoVinhos{
-    padding: 2rem;
+#videoVinhos {
+    padding: 40px 30px;
     display: flex;
     justify-content: center;
 }
 
-.diferencial h1{
-    color: #993955;
-    padding: 1.5rem;
-    text-align: center;
+#videoVinhos video {
+    border-radius: 10px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
 }
 
-.diferencialConteudo{
-    color: #FFF;
-    padding: 5rem;
-    text-align: justify;
-}
-
-.textoDiferencial{
-    padding: 1rem;
-}
-
-hr{
+hr {
     background-color: #74776B;
+    height: 2px;
+    border: none;
+    margin: 30px auto;
+    width: 80%;
+}
+
+footer {
+    background-color: #5D1328;
+    color: var(--textColorLight);
+    padding: 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer .contatos,
+footer .formulario {
+    flex: 1;
+    min-width: 300px;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--textColorLight);
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: var(--textColorLight);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #74776B;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer input,
+footer textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer button {
+    background-color: var(--secondaryColor);
+    color: var(--textColorLight);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
 }

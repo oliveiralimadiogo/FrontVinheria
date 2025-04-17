@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Vinheria">
     <meta name="description" content="Vinheria do Sr. Giulio">
-    <meta name="author" content="Diogo Oliveira Lima, Duda">
+    <meta name="author" content="Diogo Oliveira Lima e Eduarda de Castro Coutinho dos Santos">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/home.css">
     <title>Vinheria Agnello</title>
@@ -13,7 +13,11 @@
 <body>
     <header>
         <nav>
-            <div id="logo"><a href="index.html"><img src="src/assets/imgs/Logo.png" alt=""></a></div>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="src/assets/imgs/Logo.png" alt="Logo da Vinheria">
+                </a>
+            </div>
             <ul>
                 <li><a href="src/pages/catalogo.html" class="link-menu">Catálogo</a></li>
                 <li><a href="src/pages/sobreNos.html" class="link-menu">Sobre Nós</a></li>
@@ -22,26 +26,57 @@
             </ul>
         </nav>
     </header>
-    <section class="homeConteudo">
-        <div class="vinheriaApresentacao">
-            <h1>Vinheria</h1>
-            <p>Somos uma empresa familiar, dirigida pelo Giulio, e sua filha Bianca.
-                Atuamos há mais de 15 anos com uma única loja física, que conta com uma equipe de 6 funcionários dedicados às áreas de administração, estoques e vendas.
-                Nossos funcionários possuem um profundo conhecimento em vinhos. Utilizamos dessas informações para trazer ao nosso cliente uma “comsultoria” no atendimento, ajudando-o na escolha dos vinhos.
-            </p>
+
+    <main>
+        <section class="homeConteudo">
+            <div class="vinheriaApresentacao">
+                <h1>Vinheria</h1>
+                <p>
+                    Somos uma empresa familiar, dirigida pelo Giulio, e sua filha Bianca.
+                    Atuamos há mais de 15 anos com uma única loja física, que conta com uma equipe de 6 funcionários dedicados às áreas de administração, estoques e vendas.
+                    Nossos funcionários possuem um profundo conhecimento em vinhos. Utilizamos dessas informações para trazer ao nosso cliente uma “comsultoria” no atendimento, ajudando-o na escolha dos vinhos.
+                </p>
+            </div>
+            <div class="nossosEspecialistas">
+                <h1>Conheça Nossa Loja Física</h1>
+                <p>
+                  Quer viver uma verdadeira experiência no mundo dos vinhos? Nossa loja física está de portas abertas para te receber! 
+                  Visite-nos na <strong> Rua Costa Aguiar, nº 1376 – Conjunto 12, Ipiranga, São Paulo – SP.</strong> 
+                  Aqui, você encontra um atendimento personalizado, ambiente acolhedor e uma seleção especial de rótulos para todos os gostos. 
+                  Estamos te esperando para um bom papo e um bom vinho!
+                </p>
+              </div>              
+        </section>
+
+        <hr>
+
+        <section id="videoVinhos">
+            <video width="1250" height="703" autoplay muted loop>
+                <source src="src/assets/video/videoplayback.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contatos">
+            <h2>Desenvolvedores</h2>
+            <ul>
+                <li><a href="https://github.com/oliveiralimadiogo" target="_blank">Diogo Oliveira Lima</a></li>
+                <li><a href="https://github.com/DudaFror" target="_blank">Eduarda de Castro Coutinho dos Santos</a></li>
+                <li><a href="https://github.com/SoaressFelipe" target="_blank">Felipe Cordeiro Soares do Carmo</a></li>
+                <li><a href="https://github.com/LucassAquino" target="_blank">Lucas dos Reis Aquino</a></li>
+                <li><a href="https://github.com/LucasBonato" target="_blank">Lucas Perez Bonato</a></li>
+            </ul>
         </div>
-        <div class="nossoDiferencial">
-            <h1>Nosso diferencial</h1>
-            <p>O mundo dos vinhos é bastante vasto e diverso, o que torna bastante difícil a  tomada de decisão na hora da compra e da forma de consumo para a maioria  do público consumidor.
-                Por isso, nosso atendimento é personalizado para cada tipo diferente de cliente que aparece em nossa loja, para que possamos atender as suas expectativas, além de gerar ótimas conversas e troca de conhecimentos!
-            </p>
+        <div class="formulario">
+            <h2>Fale Conosco</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </section>
-    <hr>
-    <section id="videoVinhos">
-        <video width="1250" height="703" autoplay muted loop>
-            <source src="src/assets/video/videoplayback.mp4" type="video/mp4">
-          </video>
-    </section>
+    </footer>
 </body>
 </html>
