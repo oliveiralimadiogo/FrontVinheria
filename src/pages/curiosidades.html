@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vinheria">
+    <meta name="description" content="Página de curiosidades sobre vinhos e sobre a vinheria do Sr Giulio">
+    <meta name="author" content="Lucas dos Reis Aquino">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/curiosidades.css">
+    <title>Vinheria Agnello</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo"><a href="../../index.html"><img src="../assets/imgs/Logo.png" alt=""></a></div>
+            <ul>
+                <li><a href="catalogo.html" class="link-menu">Catálogo</a></li>
+                <li><a href="sobreNos.html" class="link-menu">Sobre Nós</a></li>
+                <li><a href="curiosidades.html" class="link-menu">Curiosidades</a></li>
+                <li><a href="diferenciais.html" class="link-menu">Diferenciais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Curiosidades</h2>
+        <section class="catalog-section">
+          <div class="card">
+            <img src="../assets/imgs/wines.jpg" alt="Várias taças de vinho brindando">
+            <div class="card-content">
+              <h4>Mundo dos Vinhos</h4>
+              <p>São cerca de 6.000 variedades de uvas viníferas no mundo, que adquirem
+                características e sabores diferentes de acordo com a região!</p>
+              <a href="#" class="button" onclick="openModal(
+                'Produção dos vinhos',
+                'O clima, o solo e os cuidados em seu cultivo, sem contar com as diferentes técnicas de colheita, fermentação, processamento e armazenagem, levam à produção de uma infinidade de vinhos capazes de atender aos paladares mais diversos. E tudo isso pode mudar a cada safra, cada ano de produção. É impossível experimentar todos os sabores, mas é sempre bom conhecer cada vez mais!' 
+              )">Ver Detalhes</a>
+            </div>
+          </div>
+    
+          <div class="card">
+            <img src="../assets/imgs/armazenamento-vinho.jpg" alt="Adega com barris e garrafas de vinho">
+            <div class="card-content">
+              <h4>Armazenagem Controlada</h4>
+              <p>A Vinheria
+                Agnello adota cuidados especiais na
+                armazenagem de seus vinhos,buscando assim garantir a
+                seus clientes mais exigentes a qualidade
+                original de cada garrafa!</p>
+              <a href="#" class="button" onclick="openModal(
+                'Funcionamento da armazenagem',
+                'Os vinhos são mantidos em adegas climatizadas, com controle rigoroso de temperatura, umidade e iluminação. Cada garrafa é posicionada corretamente para preservar a rolha e evitar a oxidação, assegurando que o vinho evolua da melhor forma até o momento de ser apreciado.'
+              )">Ver Detalhes</a>
+            </div>
+          </div>
+    
+          <div class="card">
+            <img src="../assets/imgs/romerwein.jpg" alt="Vinho mais velho do mundo">
+            <div class="card-content">
+              <h4>Vinho mais Antigo do Mundo</h4>
+              <p>Você sabia que existe uma garrafa de vinho com mais de 1600 anos? Pois é, faz tudo isso de tempo que existe vinho no mundo!</p>
+              <a href="#" class="button" onclick="openModal(
+                'Sobre a garrafa',
+                'Conhecida como Römerwein, essa garrafa foi encontrada em um sarcófago romano na Alemanha e data do século IV. Ela permanece lacrada até hoje e está em exibição no Museu Histórico do Palatinado, em Speyer.'
+              )">Ver Detalhes</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h3 id="modal-title">Curiosidade</h3>
+          <p id="modal-description">Descrição da curiosidade</p>
+        </div>
+      </div>
+    
+      <script src="../js/curiosidades.js"></script>
+</body>
+</html>
