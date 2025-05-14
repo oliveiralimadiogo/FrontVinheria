@@ -79,20 +79,20 @@ body{
 
 
 footer {
+    width: 100%;
     background-color: #5D1328;
     color: var(--textColorLight);
     padding: 40px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 footer .contatos,
 footer .formulario {
-    flex: 1;
+    display: inline-block;
+    vertical-align: top;
     min-width: 300px;
+    width: 45%;
 }
 
 footer h2 {
@@ -120,9 +120,11 @@ footer ul li a:hover {
 }
 
 footer form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+}
+
+footer form > * {
+    margin-bottom: 1%;
 }
 
 footer input,
@@ -131,9 +133,11 @@ footer textarea {
     border: none;
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
+    width: 100%;
 }
 
 footer button {
+    width: 50%;
     background-color: var(--secondaryColor);
     color: var(--textColorLight);
     padding: 10px;
