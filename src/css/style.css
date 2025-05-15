@@ -175,3 +175,11 @@ footer button {
     border-radius: 6px;
     font-weight: bold;
 }
+
+footer input:focus,
+footer textarea:focus {
+  outline: none;
+  border: 2px solid #000; 
+  border-radius: 8px;
+}
+
