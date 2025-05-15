@@ -131,13 +131,14 @@ main {
                 .specification-label {
                     display: inline-block;
                     width: 100%;
+                    
 
                     figure {
                         display: inline-block;
                         vertical-align: middle;
-                        margin-right: 0.5rem;
+                        margin-right: 0.4rem;
                         width: 24px;
-                        height: 24px;
+                        height: 100%;
                     }
 
                     img {
@@ -149,7 +150,7 @@ main {
                 td {
                     padding: 0.75rem 0.5rem;
                     vertical-align: middle;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     
                     p {
                         margin-bottom: 0.75rem;
