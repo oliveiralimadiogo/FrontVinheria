@@ -25,6 +25,7 @@ header {
     width: 100vw;
     z-index: 100000;
     position: fixed;
+    top: 0;
 }
 
 main {
@@ -34,22 +35,45 @@ main {
 nav {
     background-color: var(--primaryColor);
     padding: 0.5%;
-    display: flex;
-    justify-content: space-around;
+    overflow: hidden;
+    text-align: justify;
 }
 
-nav div {
+nav::after {
+    content: '';
+    display: inline-block;
+}
+
+nav #logo {
     width: 40%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+nav ul,
+nav #logo {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 nav ul {
-    width: 50%;
-    gap: 5% ;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: end;
-    align-items: center;
+  text-align: right;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  margin-right: 5%;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+nav ul li a {
+  color: var(--textColorLight);
+  text-decoration: none;
 }
 
 #logo {
@@ -79,20 +103,20 @@ body{
 
 
 footer {
+    width: 100%;
     background-color: #5D1328;
     color: var(--textColorLight);
     padding: 40px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 footer .contatos,
 footer .formulario {
-    flex: 1;
+    display: inline-block;
+    vertical-align: top;
     min-width: 300px;
+    width: 45%;
 }
 
 footer h2 {
@@ -120,9 +144,11 @@ footer ul li a:hover {
 }
 
 footer form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+}
+
+footer form > * {
+    margin-bottom: 1%;
 }
 
 footer input,
@@ -131,9 +157,11 @@ footer textarea {
     border: none;
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
+    width: 100%;
 }
 
 footer button {
+    width: 50%;
     background-color: var(--secondaryColor);
     color: var(--textColorLight);
     padding: 10px;

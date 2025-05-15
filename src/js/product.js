@@ -28,6 +28,3 @@ fetch('../assets/dados.json')
             console.error('Vinho não encontrado.');
         }
     });
-
-
-console.log(id);
