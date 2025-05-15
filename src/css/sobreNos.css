@@ -2,9 +2,10 @@ main {
     max-width: 1000px;
     margin: 7.5% auto 3rem auto;
     padding: 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+}
+
+main > * {
+    margin-bottom: 5%;
 }
 
 section.header h1 {
