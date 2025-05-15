@@ -8,7 +8,7 @@ body {
 main {
     padding: 40px 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 5% auto 0;
 }
 
 h2 {
@@ -20,19 +20,20 @@ h2 {
 }
 
 .catalog-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    text-align: center;
 }
 
 .card {
+    display: inline-block;
+    width: 30%;
+    min-height: 550px;
+    margin: 1%;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .card:hover {
@@ -48,19 +49,10 @@ h2 {
 
 .card-content {
     padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.card-content p {
-    color: var(--textColorDark);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
+.card-content p,
 .card-content h4 {
     color: var(--textColorDark);;
     font-size: 0.95rem;
@@ -69,7 +61,7 @@ h2 {
 }
 
 .button {
-    align-self: flex-start;
+    display: inline-block;
     padding: 10px 20px;
     background-color: var(--primaryColor);
     color: #fff;
@@ -134,4 +126,14 @@ h2 {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1000px) {
+    main {
+        margin-top: 10%;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
