@@ -5,8 +5,6 @@
 
 .homeConteudo::after {
     content: '';
-    display: table;
-    clear: both;
 }
 
 .vinheriaApresentacao, .nossosEspecialistas {
