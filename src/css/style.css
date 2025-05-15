@@ -25,6 +25,7 @@ header {
     width: 100vw;
     z-index: 100000;
     position: fixed;
+    top: 0;
 }
 
 main {
@@ -34,22 +35,45 @@ main {
 nav {
     background-color: var(--primaryColor);
     padding: 0.5%;
-    display: flex;
-    justify-content: space-around;
+    overflow: hidden;
+    text-align: justify;
 }
 
-nav div {
+nav::after {
+    content: '';
+    display: inline-block;
+}
+
+nav #logo {
     width: 40%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+nav ul,
+nav #logo {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 nav ul {
-    width: 50%;
-    gap: 5% ;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: end;
-    align-items: center;
+  text-align: right;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  margin-right: 5%;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+nav ul li a {
+  color: var(--textColorLight);
+  text-decoration: none;
 }
 
 #logo {
