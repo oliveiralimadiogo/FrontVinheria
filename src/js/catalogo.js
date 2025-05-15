@@ -7,13 +7,28 @@ function getVinhos(){
     });
 }
 
+function getNumeroColunas() {
+  const width = window.innerWidth;
+  console.log(width);
+  if (width >= 1545) return 4;
+  if (width >= 1180) return 3;
+  if (width >= 780) return 2;
+  return 1;
+}
+
 function montaHtml() {
+  console.log("Chamado");
   getVinhos().then(vinhos => {
     const table = document.getElementById('container-itens');
     let row;
 
+    while (table.firstChild) {
+      table.removeChild(table.firstChild);
+    }
+
+    const colunas = getNumeroColunas();
     for (let i = 0; i < vinhos.length; i++) {
-      if (i % 4 === 0) {
+      if (i % colunas === 0) {
         row = document.createElement('tr');
         table.appendChild(row);
       }
@@ -72,9 +87,15 @@ function montaHtml() {
       row.appendChild(cell);
     }
 
-    const resto = vinhos.length % 4;
-    if (resto > 0) {
-      for (let i = 0; i < 4 - resto; i++) {
+    const vinhosLength = vinhos.length;
+    const resto = vinhosLength % colunas;
+
+    console.log("Colunas: ", colunas);
+    console.log("Length: ", vinhosLength);
+    console.log("Resto: ", resto);
+    
+    if (resto !== 0) {
+      for (let i = 0; i < colunas - resto; i++) {
         const emptyCell = document.createElement('td');
 
         const emptyItem = document.createElement('div');
@@ -88,5 +109,14 @@ function montaHtml() {
   });
 }
 
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => montaHtml(), 300);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  montaHtml();
+});
 
 montaHtml();
