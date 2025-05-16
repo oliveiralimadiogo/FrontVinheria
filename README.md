@@ -23,7 +23,7 @@ O projeto é dividido em 6 páginas, acessíveis através de um menu fixo no top
 
 - [Diogo Oliveira Lima](https://github.com/oliveiralimadiogo)
 - [Eduarda de Castro Coutinho dos Santos](https://github.com/DudaFror)
-- [Felipe Cordeiro Soares do Carmo](https://github.com/SoaressFelipe)
+- [Leandro Simoneli da Silva](https://github.com/Leo010906)
 - [Lucas dos Reis Aquino](https://github.com/LucassAquino)
 - [Lucas Perez Bonato](https://github.com/LucasBonato)
 
