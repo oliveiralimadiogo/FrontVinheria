@@ -93,12 +93,6 @@ p{
     font-size: 1rem;
 }
 
-
-p::selection{
-    background-color: var(--primaryColor);
-    color: var(--textColorLight);
-}
-
 h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat", sans-serif;
 }
@@ -174,13 +168,6 @@ footer button {
     border: none;
     border-radius: 6px;
     font-weight: bold;
-}
-
-footer input:focus,
-footer textarea:focus {
-  outline: none;
-  border: 2px solid #000; 
-  border-radius: 8px;
 }
 
 @import url('efeitos.css');
