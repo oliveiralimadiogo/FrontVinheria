@@ -75,12 +75,6 @@ main {
                     cursor: pointer;
                     transition: background-color 0.3s ease;
                 }
-
-                button:hover {
-                    background-color: #5a1919;
-                    transform: scale(102%);
-                    transition: transform 0.2s ease, box-shadow 0.2s ease;
-                }
             }
         }
     }

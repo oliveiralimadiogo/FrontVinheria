@@ -3,10 +3,6 @@
     padding: 30px;
 }
 
-.homeConteudo::after {
-    content: '';
-}
-
 .vinheriaApresentacao, .nossosEspecialistas {
     display: inline-block;
     vertical-align: tops;

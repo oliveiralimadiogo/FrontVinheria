@@ -36,10 +36,6 @@ h2 {
     box-sizing: border-box;
 }
 
-.card:hover {
-    transform: translateY(-5px);    
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
 
 .card img {
     width: 100%;
@@ -71,10 +67,6 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #7a2d45;
 }
 
 .modal-overlay {
@@ -138,17 +130,3 @@ h2 {
     z-index: 1000;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; scale: 0.95; }
-    to { opacity: 1; scale: 1; }
-}
-
-@media (max-width: 1000px) {
-    main {
-        margin-top: 10%;
-    }
-
-    .card {
-        width: 90%;
-    }
-}
